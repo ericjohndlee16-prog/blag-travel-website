@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BLAG Travel and Tours Services — domestic and international ticketing, hotel bookings, tours, and visa assistance.">
+  <title>BLAG Travel and Tours Services | We'll Take You There</title>
+  <style>
+    :root{--navy:#092b55;--blue:#1264b3;--sky:#eaf5ff;--ink:#172b43;--muted:#5b6c80;--white:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f7fbff;line-height:1.6}
+    a{color:inherit}
+    .topbar{background:var(--navy);color:#fff;padding:9px 5%;font-size:13px;text-align:center}
+    header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 3px 18px #08294b12}
+    .nav{max-width:1160px;margin:auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;color:var(--navy);letter-spacing:.2px}
+    .brand img{width:58px;height:58px;object-fit:contain;border-radius:50%}
+    .brand span{max-width:230px;line-height:1.15}
+    nav{display:flex;gap:23px;align-items:center;flex-wrap:wrap}
+    nav a{text-decoration:none;font-size:14px;font-weight:700;color:#31445b}
+    nav a:hover{color:var(--blue)}
+    .hero{background:linear-gradient(115deg,#082a54ee,#1267b8d9),url('assets/business-flyer.png') center/cover;min-height:500px;display:flex;align-items:center;color:#fff}
+    .hero-inner{max-width:1160px;margin:auto;padding:80px 24px;width:100%}
+    .eyebrow{font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9e6ff;font-size:13px}
+    h1{font-size:clamp(38px,6vw,66px);line-height:1.04;max-width:760px;margin:14px 0 18px}
+    .hero p{font-size:18px;max-width:610px;color:#e7f3ff}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:9px;text-decoration:none;font-weight:800;border:2px solid transparent;transition:.2s}
+    .btn-primary{background:#fff;color:var(--navy)}
+    .btn-outline{border-color:#ffffffaa;color:#fff}
+    .btn:hover{transform:translateY(-2px)}
+    section{padding:76px 22px}
+    .wrap{max-width:1100px;margin:auto}
+    .section-tag{text-transform:uppercase;letter-spacing:2px;color:var(--blue);font-size:12px;font-weight:800}
+    h2{font-size:clamp(28px,4vw,40px);line-height:1.15;color:var(--navy);margin:8px 0 14px}
+    .intro{color:var(--muted);max-width:680px;margin:0 0 30px}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{background:#fff;border:1px solid #e1edf8;border-radius:16px;padding:25px;box-shadow:0 10px 30px #0b37600a}
+    .service .icon{font-size:29px}
+    .service h3{color:var(--navy);margin:12px 0 7px;font-size:18px}
+    .service p{color:var(--muted);font-size:14px;margin:0}
+    .about{background:var(--sky)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}
+    .about img{width:100%;border-radius:16px;box-shadow:0 14px 35px #0b37601c}
+    .checklist{padding:0;list-style:none}
+    .checklist li{margin:10px 0;color:#344a62}
+    .checklist li:before{content:"✓";color:var(--blue);font-weight:900;margin-right:10px}
+    .airlines{background:#fff;text-align:center}
+    .airline-note{color:var(--muted);max-width:720px;margin:0 auto}
+    .contact{background:linear-gradient(135deg,#092b55,#1264b3);color:#fff}
+    .contact h2{color:#fff}
+    .contact .intro{color:#d9eaff}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .contact-card{background:#ffffff12;border:1px solid #ffffff30;border-radius:15px;padding:24px}
+    .contact-card h3{margin-top:0}
+    .contact-card p{margin:9px 0;color:#edf6ff;overflow-wrap:anywhere}
+    .contact-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .contact .btn-primary{background:#fff;color:var(--navy)}
+    .contact .btn-outline{border-color:#ffffff88}
+    footer{background:#061e3b;color:#c9d9ea;text-align:center;padding:24px 18px;font-size:13px}
+    footer strong{color:#fff}
+    @media(max-width:760px){
+      .nav{align-items:flex-start}.brand span{font-size:13px}nav{gap:12px;justify-content:flex-end}nav a{font-size:12px}
+      .hero{min-height:440px}.hero-inner{padding:65px 22px}
+      .services{grid-template-columns:1fr 1fr}.about-grid,.contact-grid{grid-template-columns:1fr}
+      section{padding:58px 18px}
+    }
+    @media(max-width:480px){
+      .nav{flex-direction:column;align-items:center}.brand{align-self:flex-start}nav{justify-content:center}
+      .services{grid-template-columns:1fr}.hero p{font-size:16px}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">Your journey starts here · BLAG Travel and Tours Services</div>
+  <header>
+    <div class="nav">
+      <a class="brand" href="#home">
+        <img src="assets/blag-logo.jpeg" alt="BLAG Travel and Tours logo">
+        <span>BLAG TRAVEL AND TOURS SERVICES</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="eyebrow">Travel with confidence</div>
+        <h1>Wherever you want to go, <span style="color:#b9e0ff">we'll take you there.</span></h1>
+        <p>Make your next journey easier with BLAG Travel and Tours Services. From ticketing and hotel stays to tours and visa assistance, we're here to help you plan.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#contact">Book / Inquire Now</a>
+          <a class="btn btn-outline" href="#services">Explore Our Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-tag">What we offer</div>
+        <h2>Travel services made easier</h2>
+        <p class="intro">Whether you're planning a local getaway or an international trip, ask our team about the service you need.</p>
+        <div class="services">
+          <article class="service"><div class="icon">✈️</div><h3>Domestic Ticketing</h3><p>Authorized domestic airline ticketing assistance for trips around the Philippines.</p></article>
+          <article class="service"><div class="icon">🌍</div><h3>International Ticketing</h3><p>International flight ticketing assistance for journeys around the world.</p></article>
+          <article class="service"><div class="icon">🏨</div><h3>Hotel Accommodation</h3><p>Hotel accommodation booking assistance for your stay.</p></article>
+          <article class="service"><div class="icon">🧳</div><h3>Local & International Tours</h3><p>Ask us about tour options and travel arrangements for your next adventure.</p></article>
+          <article class="service"><div class="icon">🛂</div><h3>Tourist Visa Assistance</h3><p>Assistance with tourist visa application requirements and preparation.</p></article>
+          <article class="service"><div class="icon">💼</div><h3>Business Visa Assistance</h3><p>Assistance with business visa application requirements and preparation.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div>
+          <div class="section-tag">About BLAG</div>
+          <h2>We'll take you there.</h2>
+          <p class="intro">BLAG Travel and Tours Services helps travelers arrange the essentials for their journeys. Contact us to ask about available routes, accommodations, tours, and visa assistance.</p>
+          <ul class="checklist">
+            <li>Domestic and international airline ticketing</li>
+            <li>Hotel accommodation booking</li>
+            <li>Local and international tour inquiries</li>
+            <li>Tourist and business visa assistance</li>
+          </ul>
+        </div>
+        <img src="assets/business-flyer.png" alt="BLAG Travel and Tours Services business information and services flyer">
+      </div>
+    </section>
+
+    <section class="airlines">
+      <div class="wrap">
+        <div class="section-tag">Travel options</div>
+        <h2>Domestic & international travel</h2>
+        <p class="airline-note">Ask us about available flights and travel options across domestic and international airlines, as well as cruise availability. Airline availability and booking terms are subject to confirmation.</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="section-tag" style="color:#b9e0ff">Get in touch</div>
+        <h2>Let's plan your next trip.</h2>
+        <p class="intro">Message us on Facebook or Viber, or contact us using the details below. Tell us your destination and preferred travel dates to get started.</p>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Contact information</h3>
+            <p><strong>Landline:</strong> (02) 8401-8530</p>
+            <p><strong>Mobile & Viber:</strong> 0945-784-9971</p>
+            <p><strong>Email:</strong> blagtravelandtours@gmail.com</p>
+            <p><strong>Facebook:</strong> BLAG TRAVEL AND TOURS</p>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="viber://chat?number=%2B639457849971">Chat on Viber</a>
+              <a class="btn btn-outline" href="https://www.facebook.com/search/top?q=BLAG%20TRAVEL%20AND%20TOURS" target="_blank" rel="noopener">Find us on Facebook</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <h3>Visit our office</h3>
+            <p>Unit C Blk. 8 Lot 19, 2nd Floor, Buenmar Ave.</p>
+            <p>Greenland Subdivision, Brgy. San Juan, Cainta, Rizal</p>
+            <p style="margin-top:20px">For bookings and inquiries, contact us directly so our team can confirm current availability, rates, and requirements.</p>
+            <a class="btn btn-primary" href="mailto:blagtravelandtours@gmail.com?subject=Travel%20Booking%20Inquiry">Email an inquiry</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><strong>BLAG Travel and Tours Services</strong><br>“WILL TAKE YOU THERE”<br>© <span id="year">2026</span> BLAG Travel and Tours Services. All rights reserved.</footer>
+</body>
+</html>
